@@ -1,0 +1,7 @@
+<?php
+	function ConnectDatabase(){
+		$con=@mysql_connect("localhost", "rangeten_user1", "good123");
+		mysql_select_db('rangeten_db',$con);
+		return $con;
+	}
+?>

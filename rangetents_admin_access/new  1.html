@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+<title>Add two numbers</title><!--Title of the page -->
+<script type="text/javascript">
+</script>
+<script type='text/javascript'>
+	
+	function generateCode()
+	{
+		var variable1=document.getElementById("var1").value;
+		var variable2=document.getElementById("var2").value;
+		var Message1=document.getElementById('msg1').value;
+		var Message2=document.getElementById('msg2').value;
+		var result=document.getElementById('result').value;
+		var datatype=document.getElementById('datatype').value;
+		var action=document.getElementById('action').value;
+		var title="/*This program "+document.getElementById('does').value+"*/\n";
+		var statement=actionStatement(action);
+		var finaloutput=getPrintMessage(action);
+
+	var defaultcode="#include<stdio.h> "+title+
+	"int main(){\n datatype "+ variable1+";\n datatype "+variable2+";\n"+"datatype "+result+";\n"+
+	"printf(\""+ Message1+":\");\n"+"scanf(\"%spec\",&"+variable1+");\n"+
+	"printf(\""+ Message2+":\");\n"+"scanf(\"%spec\",&"+variable2+");\n"+
+	""+statement+"\n" + finaloutput +"return 0;"+"\n}";
+	var code_with_data_types=defaultcode.replace(/datatype/g,datatype);
+	var code=code_with_data_types.replace(/%spec/g,getSpecifier(datatype));
+	document.getElementById('GeneratedCode').value=code;
+	
+	}
+	
+	function getSpecifier(field)
+	{
+		switch(field)
+		{
+			case 'int':
+				return '%d';
+				break;
+			case 'float':
+				return '%f';
+				break;
+			case 'char':
+				return '%c';
+				break;	
+		}
+	}
+	
+	function actionStatement(field)
+	{
+		var result=document.getElementById('result').value;
+		var variable1=document.getElementById("var1").value;
+		var variable2=document.getElementById("var2").value;
+		switch(field){
+			case '+':
+				return result+"="+variable1+" + "+variable2+";\n";
+				break;
+			case '-':
+				return result+"="+variable1+" - "+variable2+";\n";
+				break;
+			case '*':
+				return result+"="+variable1+" * "+variable2+";\n";
+				break;
+			case '/':
+				return result+"="+variable1+" / "+variable2+";\n";
+				break;
+		}
+	}
+	function getPrintMessage(actionValue){
+	var result=document.getElementById('result').value;
+		var variable1=document.getElementById("var1").value;
+		var variable2=document.getElementById("var2").value;
+		switch(actionValue){
+			case '+':
+			if(document.getElementById('datatype').value=='char')
+				return "printf(\"The "+result+" of %spec and %spec is %d\","+variable1+","+variable2+","+result+");\n";
+			else
+				return "printf(\"The "+result+" of %spec and %spec is %spec\","+variable1+","+variable2+","+result+");\n";
+				break;
+			case '-':
+				return "printf(\"The "+result+" of %spec and %spec is %spec\","+variable1+","+variable2+","+result+");\n";
+				break;
+			case '*':
+				return "printf(\"The multiple of %spec and %spec is %spec\","+variable1+","+variable2+","+result+");\n";
+				break;
+			case '/':
+				return "printf(\"The "+result+" of %spec and %spec is %f\","+variable1+","+variable2+","+result+");\n";
+				break;
+		}
+	
+	}
+	function checkVariableName(id)
+	{
+		if(/ /.test(document.getElementById(id).value))
+		{
+			alert("The variable name cannot contain a space");
+			document.getElementById(id).value='';
+		}
+		else if(/[-=&%#@!\/\*\+\\\^\$] /.test(document.getElementById(id).value))
+		{
+			alert("The variable name cannot contain arithmetic and special characters");
+			document.getElementById(id).value='';
+		}
+		else if(/^\d/.test(document.getElementById(id).value))
+		{
+			alert("The variable name cannot start with a number");
+			document.getElementById(id).value='';
+		}
+	}
+	
+</script>
+</head>
+<body>
+<form id='myform' onChange='generateCode();'>
+<table>
+<tr><td colspan='2'>This program <input type='text' id='does' size=40></td></tr>
+<tr><td>First Variable Name <input type='text' id='var1' name='var1' onChange='checkVariableName("var1");'></td><td rowspan='6'/><textarea rows='15' cols='70' id='GeneratedCode'style='font-size:13pt; color:blue;'></textarea></td></tr>
+<tr><td>Second Variable Name <input type='text' id='var2' /></td></tr>
+<tr><td>Variable name of result <input type='text' id='result' /></td></tr>
+<tr><td>Choose the nature of data <select id='datatype'>
+<option value='int'>Whole Numbers</option>
+<option value='float'>Numbers with decimal points</option>
+<option value='char'>Single characters</option>
+</select>
+</td></tr>
+<tr><td>Message to request for first input<input type='text' id='msg1'/></td></tr>
+<tr><td>Message to request for second input<input type='text' id='msg2'/></td></tr>
+<tr><td colspan='2'>Choose action<select id='action'>
+<option value='+'>Add</option>
+<option value='*'>Multiply</option>
+<option value='-'>Subtract</option>
+<option value='/'>Divide</option>
+</select>
+<tr><td><input type='button' value='View Code' id='msg1' onClick='generateCode();'/></td><td><input type='reset' id='clear'></tr>
+
+</table>
+</form>
+</body>
+</html>

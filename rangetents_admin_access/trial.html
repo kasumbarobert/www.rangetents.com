@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="images/sliderengine/jquery.js"></script>
+    <script src="images/sliderengine/amazingslider.js"></script>
+    <script src="images/sliderengine/initslider-1.js"></script>
+    
+<link rel="stylesheet" href="rangeStyles.css" />
+<title>Home | Range tents services</title>
+<script type='text/javascript'>
+
+var search=document.getElementById('search_key').value;
+
+function testSearch()
+{
+			alert(search);
+}
+var fudgeFactor = 24 / 1920; // defines the size of the body text for the maximum screen width 
+ function fontFix() {
+ var width = window.innerWidth || document.documentElement.clientWidth;
+ document.body.style.fontSize = Math.max(14, fudgeFactor * width ) + "px";
+ };
+ window.addEventListener('resize', fontFix);
+ window.addEventListener('load', fontFix);
+
+</script>
+
+</head>
+
+<body onLoad='fontFix();'>
+
+<div id="header" style='border-radius:20px;'>
+<table align="center">
+<tr ><td><img src="images/logo.png" alt="Company Logo" width="70%" height="50%" /></td><td align="center">
+<span class="company_name" style='font-size:4em;'><b>RANGE TENTS LTD</b></span>
+</td></tr>
+</table>
+</div>
+<div style='width:100%;'>
+<div id="menu" style='float:left;width:60%;'>
+<nav style='color:blue;'><a href="index.php">Home </a> |
+<a href="DisplayImages.php">view products</a> | 
+<a href="Contact us.php">contact us</a> |
+<a href="comment.php">leave a comment</a>
+</nav>
+</div> 
+<div id="search" style="padding-left:0%; padding-top:0.8em; font-size:1em;">
+  <form action='Search Results.php' method='POST' onSubmit='return testSearch();'>
+  <table align="right"><tr>
+  <td>
+    <input type="text" name="search_key" id="search_key"  style="font-size:0.8em;" placeholder='search for products'/></td><td>
+  <input type='submit' value='search'/></td></tr></table> </form>
+</div>
+</div>
+<div id='homebody'>
+<div id='homeTopSection'>
+<table  style='margin-top:5%;'><tr><td valign='top' style='background-color:border:4px solid grey; 
+		background-color:#CCC; border-radius:15px; padding-left:0%;'>
+<div id="tents_category" 
+style="float:left;">
+<table style='padding:5%;' cellpadding='5%'>
+<tr><td style="font-size:1em; color:black;" align='left'>Categories</td></tr>
+	
+		<tr><td><form action='DisplayImages.php' method='post'>
+		<input type='hidden' name='Category' value='Ordinary Tents'>
+		<input type='submit' value='Ordinary Tents' style='font-size:0.7em;border:hidden;background-color:white;'/></form>
+		</td></tr><tr><td><form action='DisplayImages.php' method='post'>
+		<input type='hidden' name='Category' value='Chairs and Tables'>
+		<input type='submit' value='Chairs and Tables' style='font-size:0.7em;border:hidden;background-color:white;'/></form>
+		</td></tr><tr><td><form action='DisplayImages.php' method='post'>
+		<input type='hidden' name='Category' value='Camping Tents'>
+		<input type='submit' value='Camping Tents' style='font-size:0.7em;border:hidden;background-color:white;'/></form>
+		</td></tr><tr><td><form action='DisplayImages.php' method='post'>
+		<input type='hidden' name='Category' value='Exhibition Tents'>
+		<input type='submit' value='Exhibition Tents' style='font-size:0.7em;border:hidden;background-color:white;'/></form>
+		</td></tr><tr><td><form action='DisplayImages.php' method='post'>
+		<input type='hidden' name='Category' value='Car shades and Covers'>
+		<input type='submit' value='Car shades and Covers' style='font-size:0.7em;border:hidden;background-color:white;'/></form>
+		</td></tr><tr><td><form action='DisplayImages.php' method='post'>
+		<input type='hidden' name='Category' value='Church Tents'>
+		<input type='submit' value='Church Tents' style='font-size:0.7em;border:hidden;background-color:white;'/></form>
+		</td></tr><tr><td><form action='DisplayImages.php' method='post'>
+		<input type='hidden' name='Category' value='Bridal Tents'>
+		<input type='submit' value='Bridal Tents' style='font-size:0.7em;border:hidden;background-color:white;'/></form>
+		</td></tr></table>
+</div></td><td align='center' width='50%' valign='top'>
+
+
+</div>
+
+    <div id='' style='display:block;position:relative; padding-bottom:1%; width:100%; display:block; '>
+        <ul class='' style='display:none;'>
+            <img src="images/logo.png" alt='Tents Models' />            
+        </ul>     
+    </div></td>
+ <td valign='top'>
+ <div id='notes'>
+<p align='center'>TENTS FOR HIRE</p>
+<p style='font-size:90%;'>30-50 SEATER / 50-80 SEATER<br />
+100 SEATER/ 150 SEATER<br />
+BRIDAL TENT / CAKE TENT<br />
+LARGE CAMPING TENTS<br />
+SMALL CAMPING TENTS</p>
+ </td>
+</tr></table>
+</div>
+<div id='info' style='float:left;'>
+<h2 style='color:red;'>Welcome to Range Tents </h2>
+<p>Range tents is one of the leading manufacturers and distributors of high quality and long lasting tents in Uganda. Our products range from ordinary tents, car shades, Bridal tents, exhibition tents, camping tents to vehicle covers as well as materials such as PVC, canvas, and aluminium. We also offer rental services for chairs and tents with an aim of making your event a special and memorable one.</p>
+<p>Our products are offered in different sizes, shapes, designs as by the clients’ specifications.</p> 
+<p>We have been in service since 2011 and this has given us vast experience in the field of events management as indicated by our rise through the ranks in a very short period.   </p>
+<p>We supply top quality products to our clients from Uganda, Kenya, Burundi, Tanzania, Rwanda, Sudan, and the Democratic Republic of Congo.
+</p><p>Our prices are always client friendly and negotiable. Together with our dedicated and professional staff and our timely delivery services we assure you of the best service.</p>
+<p>We have our main branch at Nalukolongo, Kampala-Uganda opposite Bukoola Chemical industries limited</p>
+<p>
+Click <a href='Contact us.php' style='color:red; text-decoration:underline;'>here</a> to <a href='Contact us.php' style='color:red; text-decoration:underline;'>contact</a> us. </p>
+
+<marquee>Range tents services offers affordable products that fit your interest. Visit us when you need to buy tents, hire tents and chairs for your event</marquee>
+</div>
+
+<div id='sampleImages'>
+<p style='font-size:1.3em; margin-bottom:0px; text-align:center; margin-top:0px;'>Some of our products</p>
+<table cellpadding='0'><tr><td width='33%;' align='center'><form action='DisplayImages.php' method='post'><img src='Uploaded Images/PartyTents.jpg' width='90%' height='80%' ><br />
+		<input type='hidden' name='imageName' value='images/logo.png'>
+		Party Tents <input type='submit' value='Click for More information >>' style='color:red; text-decoration:underline;border-radius:10px; background-color:white; border:hidden; text-decoration:underline;'/></form>
+		</td></td><tr><td width='33%;' align='center'><form action='DisplayImages.php' method='post'><img src='Uploaded Images/PartyTents3.jpg' width='90%' height='80%' ><br />
+		<input type='hidden' name='imageName' value='images/logo.png'>
+		Church Tents <input type='submit' value='Click for More information >>' style='color:red; text-decoration:underline;border-radius:10px; background-color:white; border:hidden; text-decoration:underline;'/></form>
+		</td></td><tr><td width='33%;' align='center'><form action='DisplayImages.php' method='post'><img src='Uploaded Images/RANGE TENTS LTD_00289.jpg' width='90%' height='80%' ><br />
+		<input type='hidden' name='imageName' value='images/logo.png'>
+		Camping tent <input type='submit' value='Click for More information >>' style='color:red; text-decoration:underline;border-radius:10px; background-color:white; border:hidden; text-decoration:underline;'/></form>
+		</td></td><tr></tr></table></div>
+
+</div>
+
+<div id='footer' style='margin-bottom:2%; padding:0px;'>
+<table width='100%' border='1' ><tr><td>
+<aside id="footerImage" style='padding-left:2%; padding-top:2%;'>
+<img src="images/logo.png" alt="Company Logo" width="90%" height="70%" />
+</aside></td>
+<td class='footer' width='30%'>
+<section id="contactsUs" style='padding-top:2%;'>
+Address:<br />
+Range Tents Services Limited<br />
+P.0 BOX 75486 KAMPALA, Uganda<br />
+Wakaliga Road near Lubiri SS<br />
+AND<br />
+Nalukolongo<br />
+Opp. Bukoola Chemical Industries<br />
+Tel: 0703 531256/ 0756 249696<br />
+</section></td>
+<td width='30%' class='footer'>
+Range Tents limited specialises in fabricating tents and camping equipments tailored to customers needs and conditions. We also offer rental services for chairs and tents for the time as required by the client. We can deliver the goods to the location where the customer needs them.
+</td>
+<td class='footer'>
+<aside id="footerlinks" name='footerlinks' style=' padding-right:10%; padding-left:5%;'>
+<ul style='list-style:none;'>
+<li><a href=''>About us</a></li>
+<li><a href='Contact us.php'>Contact us</a></li>
+</ul>
+<a href='https://www.facebook.com/rangeSevices'><img src='images/Like us on facebook.png' alt="facebook" width='20%' height='20%' /></a>Like us on <a href='https://www.facebook.com/rangeSevices'>Facebook</a>
+</aside></td></tr>
+<tr><td colspan='4' align='center' style='background-color:#856; color:yellow;'>&copy;2015. All rights reserved to Range Tents Services Limited| <a href=''>Contact Developers</a></td>
+</table>
+</div>
+</body>
+</html>

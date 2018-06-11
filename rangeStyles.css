@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.container{
+	
+}
+
+input[type='submit']
+{
+	 cursor: pointer; 
+}
+
+.row{
+	margin-top:0px;
+}
+#header{
+	
+	background-color:#00F;
+	}
+	div, aside, section{
+		
+	}
+
+
+	#homeTopSection{
+	}
+	footer{
+		background-color:#1E90FF;
+		
+		}
+
+	
+	
+body{
+
+	background:-webkit-gradient(
+	linear, center top, center bottom,
+	color-stop(20%, white),color-stop(70%,#AAF),color-stop(10%,#99F)
+	);
+	
+	background:linear-gradient(
+	to bottom, white,#EEF,#CCF, #BBF,#AAF , #99F ,#66F, #33F, blue
+	);
+	
+	background:-moz-linear-gradient(
+	top center,white,#EEF,#CCF, #BBF,#AAF , #99F ,#66F, #33F, blue
+	);
+	
+	background-repeat:no-repeat;
+	
+	font-family:"Times New Roman", Times, serif;
+	font-size:1.4em;
+		
+}
+
+#homebody{
+	margin-top:2%;
+	
+	}
+
+#images{
+	margin-left:0px;
+	margin-right:0.2%;
+	-webkit-box-align:right;
+	-moz-box-align:right;
+    margin:0 auto;
+    width:50%;
+	}
+	
+#pageBody{
+	background-color:#F0F8FF;
+}
+
+#footer{
+	padding:0;
+	font-size:1em;
+	background-color:#999;
+	display:-webkit-box;
+	}
+	
+.thumbnail
+{
+	margin-top:0px;
+}
+	#footerlinks{
+		position:relative;
+	}
+	
+	#menu nav{
+		   background-color:#ababff;
+		    font:17pt Tahoma, Geneva, sans-serif;
+		    color:white;
+						
+		   }
+		  
+		   
+    #menu nav a:hover{
+		background-color:#3C0;
+		
+		border-radius:5px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	#tents_category {
+		list-style:none;
+		font-size:1.8em;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-style:italic;
+		margin-top:1%;
+		width:20%;
+		color:red;
+		text-align:left; 
+		}
+		
+		#tents_category tr td a:hoover{
+			background-color:#C33;
+		    width:8em;
+		
+		}
+		
+		#tents_category tr td{
+		border-style:solid;
+		border-top:hidden;
+		border-left:hidden;
+		border-right:hidden;
+		border-width:thin;		
+			}
+
+    a{
+		text-decoration:none;
+		}
+	#header a:hover{
+		color:white;
+		
+		}
+		a:hoover{
+		text-decoration:underline;
+		}
+		#menu nav a{
+		
+		}
+		
+	#notes{
+		color:blue;
+		font-size:1.5em;
+		}
+		
+	#info{
+		color:#03C;
+		background-color:#E6EDF6;
+		
+		
+	}
+	#sample_Images{
+		
+		background-color:#F0F8FF;
+	}
+	
+	#whole_box{
+		position:fixed;
+		top:0%;
+		left:0%;
+		right:0%;
+		bottom:0%;
+		background-color:#69F;
+		width:100%;
+		}
+		
+		
+	#second_box{
+		position:fixed;
+		top:30%;
+		left:20%;
+		right:20%;
+		width:auto;	
+		
+		}
+		
+	#third_box{
+		
+		top:40%;
+		left:25%;
+		right:25%;
+		height:350px;
+		width:550px;
+		padding:3%;
+		background-color:#CCC;
+		border-radius:20px;
+		border:solid 1px #006;
+		
+		
+		}
+	
+	
